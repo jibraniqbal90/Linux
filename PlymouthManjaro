@@ -1,0 +1,44 @@
+https://ajithkgshk.wordpress.com/2019/04/28/installing-plymouth-bootsplash-in-manjaro/
+
+Steps:
+  1. Install Plymouth : pacman -S plymouth
+  
+  2. Modify /etc/mkinitcpio.conf
+  
+  3. In that file, find the HOOKS array. It should look something like this:
+  	--> HOOKS=(base udev [...])  
+  	--> Just add plymouth : HOOKS=(base udev plymouth [...])
+  	
+  4. Next, in the same file, we need to tell the system to load the Driver module early on, so that plymouth can show the cool animations and stuff
+  
+  5. Find "Modules" in mkinitcpio.conf and add the driver: MODULES=(i915)
+    	--> In my case it is : i915
+	--> To find out which driver you are using you can use the command : lspci -k | grep -EA3 'VGA|3D|Display'
+	
+  6. Build linux kernel image again: sudo mkinitcpio -p linux59. In my case it is linux59 but we can find the correct linux kernel:
+  	--> Goto /etc/mkinitcpio.d
+  	--> Look for all presets and select the one you want
+  		
+  7. Next up, we need to actually call plymouth during boot. For that we will modify the grub. Edit the file:
+  	--> /etc/default/grub
+  		
+  8. In the file, look for a line that looks like the following:
+	--> GRUB_CMDLINE_LINUX_DEFAULT="quiet ..."
+	--> Modify it to pass in “splash” after the “quiet” parameter, like so:
+	--> GRUB_CMDLINE_LINUX_DEFAULT="quiet splash ..."
+		
+  9. Update the grub to reflect the modified parameters by running:
+	--> sudo update-grub
+	        
+  10. Switch the Display manager. In my case it is sddm
+  	--> sudo systemctl disable sddm.service
+  	--> sudo systemctl enable sddm-plymouth.service
+  		
+  11. By default it uses spinner theme. If we want to change the theme the follow the below steps:
+  	--> Download the theme and extract it to the following path: /usr/share/plymouth/themes/
+  		
+  12. Now to list all the themes fire the command: sudo plymouth-set-default-theme -l
+  
+  13. To set the theme fire the command: sudo plymouth-set-default-theme -R <Theme Name>
+  
+  14. Reboot

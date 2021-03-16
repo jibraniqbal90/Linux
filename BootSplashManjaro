@@ -1,0 +1,14 @@
+To Install bootsplash manjaro:
+    1. Install bootsplash-systemd.
+    1. Downlaod any install bootsplash theme: 
+            1. Eg: bootsplash-theme-manjaro
+    2. It will get installed in usr/lib/firmware/bootsplash-themes
+    3. Fire the command : sudo nano /etc/mkinitcpio.conf
+        3.1 Search for HOOKS in the opened file
+        3.2 Add  "bootsplash-manjaro" in HOOKS value
+    4. Fire the command: sudo nano /etc/default/grub
+        4.1 Find the "GRUB_CMDLINE_LINUX_DEFAULT" and remove "quiet"
+        4.2 Add "bootsplash.bootfile=bootsplash-themes/manjaro/bootsplash" at the end of the line
+    5. After completing the above steps fire the command : sudo mkinitcpio -p linux58
+    6. Update grub :: sudo update-grub
+    7. Restart your system to see bootsplash screen

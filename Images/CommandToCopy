@@ -1,0 +1,2 @@
+ 
+sudo cp folder-documents.svg folder-download.svg folder-locked.svg folder-picture.svg folder-sound.svg folder-temp.svg folder-videos.svg folder.svg user-home.svg user-desktop.svg  /usr/share/icons/breeze-dark/places/64/

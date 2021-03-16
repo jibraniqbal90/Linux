@@ -1,0 +1,11 @@
+ 
+menuentry "Neon" {
+    set isofile="/home/jibran/Data/OS/neon.iso"
+    set dri="free"
+    search --no-floppy -f --set=root $isofile
+    probe -u $root --set=abc
+    set pqr="/dev/disk/by-uuid/$abc"
+    loopback loop $isofile
+    linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=${isofile} quiet splash
+    initrd (loop)/casper/initrd
+}

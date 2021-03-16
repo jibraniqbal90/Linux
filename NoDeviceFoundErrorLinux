@@ -1,0 +1,9 @@
+set boot=(hd0,msdos1)
+set prefix=(hd0,msdos1)/boot/grub
+insmod normal
+normal
+
+After login reinstall the grub setting
+-->sudo grub-install /dev/sda --target=i386-pc
+-->sudo update-grub
+
