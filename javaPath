@@ -1,0 +1,9 @@
+download java 8
+create .profile
+copy below :
+export EDITOR=/usr/bin/nano
+export JAVA_HOME=/home/jibran/Workspace/jdk1.8.0_291
+PATH=$JAVA_HOME/bin:$PATH
+export PATH
+
+goto terminal and fire: source .profile 
