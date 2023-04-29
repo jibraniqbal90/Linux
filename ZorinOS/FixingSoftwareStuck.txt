@@ -1,0 +1,11 @@
+1. sudo apt autoremove
+2. sudo apt clean
+3. sudo pkill dpkg
+4. sudo dpkg -configure -a
+5. sudi apt update
+6. sudo apt autoremove gnome-software
+7. sudo apt install gnome-software
+8. sudo apt update 
+9. sudo apt upgrade
+10.sudo apt dist-upgrade
+11. reboot 
