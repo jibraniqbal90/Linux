@@ -1,0 +1,12 @@
+1. To increase desktop icon size --> Zorin appearance--> Desktop --> iconsize
+2. To increase panel icon size goto : /usr/share/gnome-shell/extensions/zorin-taskbar@zorinos.com and change MIN_ICON_SIZE
+3. To decrease nautillus icon size donload dconf-editor and goto org->gnome->nautilus->icon-view->default-zoom-level
+4. To Change Title bar icons:
+	 --> Create file and paste the css inside:
+ 		.config/gtk-3.0/gtk.css
+5. To Change Zorin menu icon:
+  	 -->/usr/share/gnome-shell/extensions/zorin-menu@zorinos.com/
+  		 Replace zorin-icon-symbolic.svg with the desired image.
+   		 Also in widgets.js it contains the name of the icon.
+
+**** titlebar buttons stored in symbolic.
