@@ -240,4 +240,23 @@ button{
  navigation-view-page, navigation-view{
      border-right : 1px solid #ebebeb;
 }
- 
+
+
+    
+      levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
+    border-color: #15a6f0;
+    background-color: #15a6f0; 
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+    
+    }
+    
+    
+    
+
+headerbar windowcontrols button > image, headerbar windowcontrols button > image:hover
+{ 
+ all: unset;
+
+}
+
