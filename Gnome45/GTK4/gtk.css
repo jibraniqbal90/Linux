@@ -241,6 +241,17 @@ button{
      border-right : 1px solid #ebebeb;
 }
 
+overlay-split-view > widget.sidebar-pane > toolbarview
+{
+
+     border-right : 1px solid #ebebeb;
+}
+
+overlay-split-view > widget.content-pane {
+
+  background: #fafafa;
+}
+
 
     
       levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
@@ -260,3 +271,6 @@ headerbar windowcontrols button > image, headerbar windowcontrols button > image
 
 }
 
+toastoverlay > leaflet > box > headerbar > windowhandle > box:dir(ltr){
+  background: #fafafa;
+}

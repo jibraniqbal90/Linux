@@ -1646,119 +1646,117 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #unlockDialogNotifications StButton#vhandle:active, #unlockDialogNotifications StButton#hhandle:active { background-color: rgba(245, 247, 250, 0.7); }
 
 
-.modal-dialog-linked-button:last-child { color: white; background-color: #15a6f0; background-gradient-direction: horizontal; background-gradient-start: #029be9; background-gradient-end: #22c5fd; }
 
-.modal-dialog-linked-button:last-child:hover { color: white;background-color: #22c5fd; background-gradient-direction: none; }
-
-.modal-dialog-linked-button:last-child:active { color: white; background-color: #15a6f0; background-gradient-direction: none; }
-
-.modal-dialog-linked-button:last-child:insensitive { color: #8495a7; background-color: transparent; background-gradient-direction: none; }
+/****************Modified************/
 
 
-.end-session-dialog .modal-dialog-linked-button:first-child { box-shadow:none !important; }
-.end-session-dialog .modal-dialog-linked-button:first-child:hover { box-shadow:none !important; }
-.end-session-dialog .modal-dialog-linked-button:first-child:active { box-shadow:none !important; }
-
-.modal-dialog .modal-dialog-linked-button:focus { transition-duration: 150ms; color: #123354; background-color: #cfe1ee; box-shadow: none !important; 
-border-radius: 0 0 0 10px; 
+.modal-dialog-linked-button:last-child {
+     color: white;
+     background-color: #15a6f0;
+     background-gradient-direction: horizontal;
+     background-gradient-start: #029be9;
+     background-gradient-end: #22c5fd;
 }
-
-.quick-menu-toggle .quick-toggle-arrow {
-    background-color: #15a6f0 !important;
-    padding: 6px 12px;
-    border-width: 0;
-    color: rgba(0, 0, 0, 0.54);
-  }
-  
-  .quick-menu-toggle .quick-toggle-arrow:hover {
-    background-color: #15a6f0 !important;
-    color: rgba(0, 0, 0, 0.87);
-  }
-  
-  .quick-menu-toggle .quick-toggle-arrow:active {
-    background-color: #15a6f0 !important;
-    color: rgba(0, 0, 0, 0.87);
-  }
-  
-  .quick-menu-toggle .quick-toggle-arrow:checked {
-    background-color: #15a6f0 !important;
-    color: white;
-  }
-  
-  .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-    background-color: #15a6f0!important;
-    color: white;
-  }
-  
-  .quick-menu-toggle .quick-toggle-arrow:checked:active {
-    background-color: #15a6f0 !important;
-    color: white;
-  }
-  
-  
-
-  
-  .quick-menu-toggle .quick-toggle-arrow:ltr {
-    border-radius: 0 5px 5px 0;
-    border-left-width: 0;
-  }
-  
-  .quick-menu-toggle .quick-toggle-arrow:rtl {
-    border-radius: 5px 0 0 5px;
-    border-right-width: 0;
-  }
-  
-
-.quick-toggle, .quick-menu-toggle {
-  border-radius: 5px;
-  min-width: 12em;
-  max-width: 12em;
-  min-height: 44px;
-  padding: 0;
-  border: none;
+ .modal-dialog-linked-button:last-child:hover {
+     color: white;
+    background-color: #22c5fd;
+     background-gradient-direction: none;
 }
-
-
-
-.quick-toggle.button {
-  padding: 0;
+ .modal-dialog-linked-button:last-child:active {
+     color: white;
+     background-color: #15a6f0;
+     background-gradient-direction: none;
 }
-
-.quick-menu-toggle .quick-toggle {
-  min-width: auto;
-  max-width: auto;
+ .modal-dialog-linked-button:last-child:insensitive {
+     color: #8495a7;
+     background-color: transparent;
+     background-gradient-direction: none;
 }
-
-.quick-menu-toggle .quick-toggle:ltr {
-  border-radius: 5px 0 0 5px; 
-
+ .end-session-dialog .modal-dialog-linked-button:first-child {
+     box-shadow:none !important;
 }
-.quick-menu-toggle .quick-toggle:rtl {
-  border-radius: 0 5px 5px 0; }
-
-
-   .quick-toggle-arrow:checked:insensitive {  
-   background-color: #96d9fa !important;
-      background: #96d9fa !important;
- background-gradient-direction: horizontal;
-      background-gradient-start: #96d9fa;
-       background-gradient-end: #96d9fa; 
-
-
-      color: rgba(61, 61, 61, 0.4);
+ .end-session-dialog .modal-dialog-linked-button:first-child:hover {
+     box-shadow:none !important;
+}
+ .end-session-dialog .modal-dialog-linked-button:first-child:active {
+     box-shadow:none !important;
+}
+ .modal-dialog .modal-dialog-linked-button:focus {
+     transition-duration: 150ms;
+     color: #123354;
+     background-color: #cfe1ee;
+     box-shadow: none !important;
+     border-radius: 0 0 0 10px;
+}
+ .quick-menu-toggle .quick-toggle-arrow {
+     background-color: #15a6f0 !important;
+     padding: 6px 12px;
+     border-width: 0;
+     color: rgba(0, 0, 0, 0.54);
+}
+ .quick-menu-toggle .quick-toggle-arrow:hover {
+     background-color: #15a6f0 !important;
+     color: rgba(0, 0, 0, 0.87);
+}
+ .quick-menu-toggle .quick-toggle-arrow:active {
+     background-color: #15a6f0 !important;
+     color: rgba(0, 0, 0, 0.87);
+}
+ .quick-menu-toggle .quick-toggle-arrow:checked {
+     background-color: #15a6f0 !important;
+     color: white;
+}
+ .quick-menu-toggle .quick-toggle-arrow:checked:hover {
+     background-color: #15a6f0!important;
+     color: white;
+}
+ .quick-menu-toggle .quick-toggle-arrow:checked:active {
+     background-color: #15a6f0 !important;
+     color: white;
+}
+ .quick-menu-toggle .quick-toggle-arrow:ltr {
+     border-radius: 0 5px 5px 0;
+     border-left-width: 0;
+}
+ .quick-menu-toggle .quick-toggle-arrow:rtl {
+     border-radius: 5px 0 0 5px;
+     border-right-width: 0;
+}
+ .quick-toggle, .quick-menu-toggle {
+     border-radius: 5px;
+     min-width: 12em;
+     max-width: 12em;
+     min-height: 44px;
+     padding: 0;
+     border: none;
+}
+ .quick-toggle.button {
+     padding: 0;
+}
+ .quick-menu-toggle .quick-toggle {
+     min-width: auto;
+     max-width: auto;
+}
+ .quick-menu-toggle .quick-toggle:ltr {
+     border-radius: 5px 0 0 5px;
+}
+ .quick-menu-toggle .quick-toggle:rtl {
+     border-radius: 0 5px 5px 0;
+}
+ .quick-toggle-arrow:checked:insensitive {
+     background-color: #96d9fa !important;
+     background: #96d9fa !important;
+     background-gradient-direction: horizontal;
+     background-gradient-start: #96d9fa;
+     background-gradient-end: #96d9fa;
+     color: rgba(61, 61, 61, 0.4);
 }
  .quick-menu-toggle .quick-toggle:ltr:last-child {
-    border-radius: 5px; }
-  .quick-menu-toggle .quick-toggle:rtl:last-child {
-    border-radius: 5px; }
-    
-
-
-
-
-
-
-
-
-
-
+     border-radius: 5px;
+}
+ .quick-menu-toggle .quick-toggle:rtl:last-child {
+     border-radius: 5px;
+}
+ .screenshot-ui-show-pointer-button, .screenshot-ui-type-button {
+     color: #123354;
+}
