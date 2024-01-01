@@ -1,1 +1,0 @@
-copy file in .config/gtk-3.0
