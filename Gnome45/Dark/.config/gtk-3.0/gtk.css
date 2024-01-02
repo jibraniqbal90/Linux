@@ -1,7 +1,7 @@
 notebook > header > tabs > arrow, windowcontrols button,
 button {
   color: #F7F7F7;
-  background-color: #2f2f2f;
+  background-color: #303030;
        border-radius: 5px;
  }
   notebook > header > tabs > arrow:focus:focus-visible,
@@ -117,7 +117,7 @@ button {
       border-color: transparent;
       background-image: none;
       box-shadow: none;
-      background-color: #2f2f2f;
+      background-color: #303030;
       transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transition-duration: 500ms; }
     button.keyboard-activating.sidebar-button, notebook > header > tabs > arrow.keyboard-activating, windowcontrols button.keyboard-activating, .toolbar > button.keyboard-activating,
@@ -939,7 +939,7 @@ spinbutton {
   /*******************Generated Extra********************/
 
 leaflet > box > scrolledwindow > viewport{
-  background-color: #2f2f2f; 
+  background-color: #303030; 
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -947,16 +947,16 @@ leaflet > box > scrolledwindow > viewport{
 }
 
 .tweak-titlebar-left{
-  background-color: #2f2f2f; 
+  background-color: #303030; 
 }
 
 
 
 leaflet > headerbar > button{
-    background-color: #2f2f2f; 
+    background-color: #303030; 
 }
 leaflet > box > searchbar > revealer > box{
-      background-color: #2f2f2f; 
+      background-color: #303030; 
 }
 
 
@@ -1080,8 +1080,14 @@ leaflet > box > searchbar > revealer > box{
 
 
 separator.vertical{
-  background: #2f2f2f;
+  background: #303030;
 }
+
+box > frame > scrolledwindow > viewport > list{
+  background: #303030;
+
+}
+
 
 
 

@@ -23,6 +23,11 @@ leaflet > box > searchbar > revealer > box{
 }
 
 
+box > frame > scrolledwindow > viewport > list{
+  background: #ebebeb;
+
+}
+
 
 /*Minimize*/
  button.minimize {
