@@ -1,0 +1,8 @@
+Set Up
+
+Install gradience(from flat hub) and change the background. After saving it will create an entry in .confgi/gtk4.0 and confgi/gtk3.0.
+To reflect the changes for gtk3 applications install adw-gtk3-theme using the below command: 
+	sudo dnf install adw-gtk3-theme
+
+To edit gnome-shell.css create folder inside .themes/custome-theme/gnome-shell
+
