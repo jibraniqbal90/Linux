@@ -1,4 +1,11 @@
- .quick-toggle:checked {
+#LookingGlassDialog > #Toolbar .lg-toolbar-button:checked, .app-folder-dialog .folder-name-container .edit-folder-button:checked, .button:checked, .icon-button:checked { transition-duration: 150ms; color: white; background-color: #1d4973; background-gradient-direction: horizontal; background-gradient-start: #19446e; background-gradient-end: #2b72b5; box-shadow: none; }
+
+ .quick-toggle-arrow:checked:insensitive {
+     background-color: #307fc9;
+     color: rgba(61, 61, 61, 0.4);
+}
+
+.quick-toggle:checked {
      transition-duration: 150ms;
      background-color: #1d4973;
 }
@@ -27,6 +34,9 @@
 }
  .quick-menu-toggle .quick-toggle:ltr {
      border-radius: 5px 0 0 5px;
+}
+ .quick-menu-toggle .quick-toggle:ltr:last-child {
+     border-radius: 5px;
 }
  .quick-settings {
      border-radius: 10px;

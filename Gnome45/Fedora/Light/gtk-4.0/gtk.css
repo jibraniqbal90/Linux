@@ -1,0 +1,262 @@
+ button{
+     border-radius: 5px;
+}
+ button:checked {
+     color: white;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+}
+ button:checked:hover {
+     color: white;
+     border-color: #004d99;
+     background: image(#22c5fd);
+     background-color: #22c5fd;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+     box-shadow: none;
+}
+ button:checked:active {
+     color: white;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background-color: #15a6f0;
+     background: #15a6f0;
+     box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
+}
+ check:checked, radio:checked {
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     border-color: #15a6f0;
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+     color: white;
+}
+
+ button.suggested-action {
+     color: white;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+     transition-property: outline, outline-width, outline-offset, outline-color;
+     transition-duration: 300ms;
+     animation-timing-function: ease-in-out;
+}
+ button.suggested-action {
+     outline: 0 solid transparent;
+     outline-offset: 4px;
+}
+ button.suggested-action:focus:focus-visible {
+     outline-color: rgba(255, 255, 255, 0.8);
+     outline-width: 2px;
+     outline-offset: -2px;
+}
+ button.suggested-action.flat {
+     border-color: transparent;
+     background-color: transparent;
+     background-image: none;
+     box-shadow: none;
+     color: #0073E5;
+}
+ button.suggested-action:hover {
+     color: white;
+     border-color: #004d99;
+     background: image(#22c5fd);
+     background-color: #22c5fd;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+     box-shadow: none;
+}
+ button.suggested-action:active, button.suggested-action:checked {
+     color: white;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: #15a6f0;
+     box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
+}
+
+ switch:checked {
+     color: white;
+     border-color: #15a6f0;
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+}
+ switch:checked > slider {
+     border: 1px solid #15a6f0;
+}
+ entry:focus-within {
+     box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2), inset 0 0 0 2px #15a6f0;
+}
+
+
+
+ box.horizontal.linked > *{
+     border-radius: 0;
+}
+ box.horizontal.linked > *:first-child{
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+ box.horizontal.linked > *:last-child{
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+ .navigation-sidebar > row:selected {
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+     color: white;
+}
+ .navigation-sidebar > row:selected:active {
+     color: white;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: #15a6f0;
+     box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
+}
+
+ navigation-view-page, navigation-view{
+     border-right : 1px solid #ebebeb;
+}
+ overlay-split-view > widget.sidebar-pane > toolbarview {
+     border-right : 1px solid #ebebeb;
+}
+
+
+
+ levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
+     border-color: #15a6f0;
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+}
+
+widget > scale > trough > highlight.top{
+     border-color: #15a6f0;
+     background-color: #15a6f0;
+     background: linear-gradient(65deg, #029be9, #22c5fd);
+     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+}
+
+/*Minimize*/
+ button.minimize {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-minimize.svg");
+     background-size: 16px 16px;
+}
+ button.minimize:hover {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-minimize-hover.svg");
+     background-size: 16px 16px;
+}
+ button.minimize:active {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-minimize-hover.svg");
+     background-size: 16px 16px;
+}
+/*Maximize*/
+ button.maximize {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-maximize.svg");
+     background-size: 16px 16px;
+}
+ button.maximize:hover {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-unmaximize-active.svg");
+     background-size: 16px 16px;
+}
+ button.maximize:active {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-unmaximize-active.svg");
+     background-size: 16px 16px;
+}
+/*close*/
+ button.close {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin-right: 1px;
+     margin-left: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-close.svg");
+     background-size: 16px 16px;
+}
+ button.close:hover {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin-right: 1px;
+     margin-left: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-close-active.svg");
+     background-size: 16px 16px;
+}
+ button.close:active {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin-right: 1px;
+     margin-left: -5px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-close-active.svg");
+     background-size: 16px 16px;
+}
+
+@define-color window_bg_color #fafafa;
+@define-color view_bg_color #fafafa;
+@define-color headerbar_bg_color #fafafa;
+@define-color headerbar_shade_color #fafafa;
+
+
