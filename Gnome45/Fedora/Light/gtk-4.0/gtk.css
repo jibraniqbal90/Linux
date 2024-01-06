@@ -1,5 +1,6 @@
  button{
      border-radius: 5px;
+     border: 0px;
 }
  button:checked {
      color: white;
@@ -74,70 +75,87 @@
      box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
 }
 
- switch:checked {
+switch:checked {
      color: white;
      border-color: #15a6f0;
-     background-color: #15a6f0;
      background: linear-gradient(65deg, #029be9, #22c5fd);
 }
  switch:checked > slider {
      border: 1px solid #15a6f0;
 }
+
  entry:focus-within {
      box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2), inset 0 0 0 2px #15a6f0;
 }
 
-
-
- box.horizontal.linked > *{
+ buttonbox.horizontal.linked > *{
      border-radius: 0;
 }
- box.horizontal.linked > *:first-child{
+ buttonbox.horizontal.linked > *:first-child{
      border-top-left-radius: 5px;
      border-bottom-left-radius: 5px;
+     
 }
- box.horizontal.linked > *:last-child{
+
+ buttonbox.horizontal.linked > *:last-child{
      border-top-right-radius: 5px;
      border-bottom-right-radius: 5px;
+
 }
 
  .navigation-sidebar > row:selected {
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #15a6f0;
-     background: linear-gradient(65deg, #029be9, #22c5fd);
-     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+     background: linear-15a6f0(65deg, #029be9, #22c5fd);
      color: white;
 }
+
  .navigation-sidebar > row:selected:active {
      color: white;
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #15a6f0;
      background: #15a6f0;
-     box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
+
 }
 
- navigation-view-page, navigation-view{
-     border-right : 1px solid #ebebeb;
-}
- overlay-split-view > widget.sidebar-pane > toolbarview {
-     border-right : 1px solid #ebebeb;
+leaflet > box > searchbar > revealer > box{
+      background-color: #ebebeb; 
+      border: 0px;
 }
 
+ box > frame > scrolledwindow > viewport > list > row:selected {
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: linear-15a6f0(65deg, #029be9, #22c5fd);
+     color: white;
+}
 
+ box > frame > scrolledwindow > viewport > list > row:active {
+     color: white;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #15a6f0;
+     background: #15a6f0;
+
+}
 
  levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
      border-color: #15a6f0;
      background-color: #15a6f0;
-     background: linear-gradient(65deg, #029be9, #22c5fd);
-     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+     background: linear-15a6f0(65deg, #029be9, #22c5fd);
+
 }
 
-widget > scale > trough > highlight.top{
-     border-color: #15a6f0;
-     background-color: #15a6f0;
-     background: linear-gradient(65deg, #029be9, #22c5fd);
-     box-shadow: 0 2px 4px rgba(34, 197, 253, 0.2);
+
+leaflet > separator.vertical{
+  background: #ebebeb;
 }
+
+
+leaflet > separator.horizontal{
+  background: #ebebeb;
+}
+
+
 
 /*Minimize*/
  button.minimize {
@@ -254,9 +272,13 @@ widget > scale > trough > highlight.top{
      background-size: 16px 16px;
 }
 
+box > frame > scrolledwindow > viewport > list{
+  background: #ebebeb;
+
+}
+
+
 @define-color window_bg_color #fafafa;
 @define-color view_bg_color #fafafa;
 @define-color headerbar_bg_color #fafafa;
 @define-color headerbar_shade_color #fafafa;
-
-

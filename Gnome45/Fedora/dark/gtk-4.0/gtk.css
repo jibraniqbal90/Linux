@@ -1,8 +1,9 @@
+  /*************Global Buttons*********************/
  button{
      border-radius: 5px;
 }
  button:checked {
-     color: white;
+     color: #f7f7f7;
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #1d4973;
      background: linear-gradient(65deg, #19446e, #2b72b5);
@@ -11,14 +12,14 @@
      animation-timing-function: ease-in-out
 }
  button:checked:hover {
-     color: white;
+     color: #f7f7f7;
      border-color: #3578b8;
      background: image(#3578b8);
      background-color: #3578b8;
      box-shadow: none;
 }
  button:checked:active {
-     color: white;
+     color: #f7f7f7;
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #1d4973;
      background-color: #1d4973;
@@ -26,15 +27,17 @@
      box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
 }
 
+ /*************check box and raido*********************/
  check:checked, radio:checked {
      background-color: #1d4973;
      background: linear-gradient(65deg, #19446e, #2b72b5);
      border-color: #1d4973;
-     color: white;
+     color: #f7f7f7;
 }
 
- button.suggested-action {
-     color: white;
+ /*************Suggested Buttons*********************/
+ button.suggested-action{
+     color: #f7f7f7;
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #1d4973;
      background: linear-gradient(65deg, #19446e, #2b72b5);
@@ -46,34 +49,80 @@
      outline: 0 solid transparent;
      outline-offset: 4px;
 }
- button.suggested-action:focus:focus-visible {
+ button.suggested-action:focus:focus-visible{
      outline-color: rgba(255, 255, 255, 0.8);
      outline-width: 2px;
      outline-offset: -2px;
 }
- button.suggested-action.flat {
+ button.suggested-action.flat{
      border-color: transparent;
      background-color: transparent;
      background-image: none;
      box-shadow: none;
      color: #0073E5;
 }
- button.suggested-action:hover {
-     color: white;
+ button.suggested-action:hover{
+     color: #f7f7f7;
      background: #3578b8;
      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
      box-shadow: none;
 }
  button.suggested-action:active, button.suggested-action:checked {
-     color: white;
+     color: #f7f7f7;
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #1d4973;
      background: #1d4973;
 
 }
 
+/***************Delete Permanently dialog*****************/
+
+box.dialog-action-area > button.text-button:not(.destructive-action), window.messagedialog .response-area > button.flat{
+   color: #f7f7f7; background-color: #515861;
+   border-top-right-radius: 0px;
+   border-top-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   border: 0px;
+}
+
+box.dialog-action-area > button.text-button:hover:not(.destructive-action), window.messagedialog .response-area > button.flat:hover{
+   background: image(#596069);
+   background-color: #596069; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+
+}
+box.dialog-action-area > button.text-button:active:not(.destructive-action), window.messagedialog .response-area > button.flat:active{
+   background: image(#606772);
+   background-color: #606772; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+}
+
+
+button.destructive-action{
+     color: #f7f7f7;
+     background-color: #fa4444;
+     background: linear-gradient(65deg, #ff2626, #ff5966) !important;
+     font-weight: bold;
+     border-top-right-radius: 0px;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+     border: 0px;
+}
+
+
+ button.destructive-action:hover
+ {
+   background: image(#ff5966);
+   background-color: #ff5966; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+ }
+
+
+button.destructive-action:active{
+   background: image(#f91212);
+   background-color: #f91212; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+
+}
+
 switch:checked {
-     color: white;
+     color: #f7f7f7;
      border-color: #1d4973;
      background: linear-gradient(65deg, #19446e, #2b72b5);
 }
@@ -101,11 +150,11 @@ switch:checked {
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #1d4973;
      background: linear-gradient(65deg, #19446e, #2b72b5);
-     color: white;
+     color: #f7f7f7;
 }
 
  .navigation-sidebar > row:selected:active {
-     color: white;
+     color: #f7f7f7;
      outline-color: rgba(255, 255, 255, 0.3);
      background-color: #1d4973;
      background: #1d4973;
@@ -250,12 +299,50 @@ widget > scale > trough > highlight.top{
      background-size: 16px 16px;
 }
 
+window.messagedialog .response-area > button.destructive { 
+
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #ff2626;
+     background: linear-gradient(65deg, #ff2626, #ff5966);
+     border-radius: 0px;    
+}
+
+window.messagedialog .response-area > button.destructive:hover { 
+   background: image(#ff5966);
+   background-color: #ff5966; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2);
+}
+
+window.messagedialog .response-area > button.destructive:active {
+   background: image(#f91212);
+   background-color: #f91212; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+}
+
+window.messagedialog .response-area > button.suggested {
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+     border-radius: 0px;    
+     border-top-right-radius: 0px;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+}
+
+window.messagedialog .response-area > button.suggested:hover { 
+    background: #3578b8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+window.messagedialog .response-area > button.suggested:active {
+    background: #1d4973;
+}
+
+
 @define-color accent_color #78aeed;
 @define-color accent_bg_color #3584e4;
 @define-color accent_fg_color #ffffff;
-@define-color destructive_color #ff7b63;
-@define-color destructive_bg_color #c01c28;
-@define-color destructive_fg_color #ffffff;
+
 @define-color success_color #8ff0a4;
 @define-color success_bg_color #26a269;
 @define-color success_fg_color #ffffff;
