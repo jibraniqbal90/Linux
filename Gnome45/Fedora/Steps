@@ -1,8 +1,19 @@
 Set Up
 
-Install gradience(from flat hub) and change the background. After saving it will create an entry in .confgi/gtk4.0 and confgi/gtk3.0.
-To reflect the changes for gtk3 applications install adw-gtk3-theme using the below command: 
+1. Install gradience(from flat hub) and change the background. After saving it will create an entry in .confgi/gtk4.0 and confgi/gtk3.0.
+2. To reflect the changes for gtk3 applications install adw-gtk3-theme using the below command: 
 	sudo dnf install adw-gtk3-theme
 
-To edit gnome-shell.css create folder inside .themes/custome-theme/gnome-shell
+3. To edit gnome-shell.css create folder inside .themes/custome-theme/gnome-shell
+4. To change the login wallpaper install : sudo dnf install gdm-settings.
+5. To change the login screen user list: 
+	1. Run the script : extractGresource.sh
+	2. It will extract all the resources inside the folder: /home/jibran/shell-theme
+	3. Edit gnome-shell-dark.css: Search for user-list and replace it with: userlist.css
+	4. Create gnome-shell-theme.gresource.xml in the same folder
+	5. Generate gresource: glib-compile-resources gnome-shell-theme.gresource.xml
+	6. It will create the file: gnome-shell-theme.gresource in the same folder
+	7. Copy this file: sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell
+	8. Restart GDM: sudo systemctl restart gdm
+	
 
