@@ -1,0 +1,8 @@
+.login-dialog-prompt-entry{
+background-color: rgba(255, 255, 255, 0.125) !important;
+}
+
+
+ .login-dialog-button.cancel-button, .login-dialog-button.switch-user-button, .login-dialog-button.login-dialog-session-list-button {
+  color: #ffffff;
+ background-color: rgba(255, 255, 255, 0.125) !important; }
