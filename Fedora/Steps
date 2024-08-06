@@ -28,4 +28,5 @@ Set Up
 7. To install folder color: 
 	1. Copy the file folder-color.py to /.local/share/nautilus-python/extensions
 	2. Make sure to install the theme that folder-color supports like papirus or numix
+8. Type Ahead: https://github.com/nelsonaloysio/fedora-nautilus-typeahead-rpm (There is source code also. Check the difference with the official gnome and add only the difference only)
 
