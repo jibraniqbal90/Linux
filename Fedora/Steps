@@ -33,6 +33,8 @@ Set Up
 	1. Goto Settings --> Displays --> select the display and change the resolution and revert back. It will generate monitrs.xml
 	2. sudo cp ~/.config/monitors.xml ~gdm/.config/monitors.xml
 10. To decrease nautillus icon size donload dconf-editor and goto org->gnome->nautilus->icon-view->default-zoom-level
+11. To change the app icon, copy the .desktop file from /usr/share/applications to ~/.local/share/applications. Change the path of Icon.
+12. To change the folder, change the index.theme file. Add or remove the entry from  Directories and change the values.
 
 
 
