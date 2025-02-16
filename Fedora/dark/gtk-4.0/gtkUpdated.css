@@ -1,0 +1,413 @@
+  /*************Global Buttons*********************/
+ 
+ button{
+     border-radius: 5px;
+}
+ button:checked {asd
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+}
+ button:checked:hover {
+     color: #f7f7f7;
+     border-color: #3578b8;
+     background: image(#3578b8);
+     background-color: #3578b8;
+     box-shadow: none;
+}
+ button:checked:active {
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background-color: #1d4973;
+     background: #1d4973;
+     box-shadow: 0 2px 4px rgba(21, 166, 240, 0.2);
+}
+
+ /*************check box and raido*********************/
+ check:checked, radio:checked {
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+     border-color: #1d4973;
+     color: #f7f7f7;
+}
+
+ /*************Suggested Buttons*********************/
+ button.suggested-action{
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+}
+
+ button.suggested-action {
+     outline: 0 solid transparent;
+     outline-offset: 4px;
+}
+ button.suggested-action:focus:focus-visible{
+     outline-color: rgba(255, 255, 255, 0.8);
+     outline-width: 2px;
+     outline-offset: -2px;
+}
+ button.suggested-action.flat{
+     border-color: transparent;
+     background-color: transparent;
+     background-image: none;
+     box-shadow: none;
+     color: #0073E5;
+}
+ button.suggested-action:hover{
+     color: #f7f7f7;
+     background: #3578b8;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+     box-shadow: none;
+}
+ button.suggested-action:active, button.suggested-action:checked {
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: #1d4973;
+
+}
+
+ 
+ 
+/***************Delete Permanently dialog*****************/
+
+box.dialog-action-area > button.text-button:not(.destructive-action), window.messagedialog .response-area > button.flat{
+   color: #f7f7f7; background-color: #515861;
+   border-top-right-radius: 0px;
+   border-top-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   border: 0px;
+}
+
+box.dialog-action-area > button.text-button:hover:not(.destructive-action), window.messagedialog .response-area > button.flat:hover{
+   background: image(#596069);
+   background-color: #596069; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+
+}
+box.dialog-action-area > button.text-button:active:not(.destructive-action), window.messagedialog .response-area > button.flat:active{
+   background: image(#606772);
+   background-color: #606772; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+}
+
+
+button.destructive-action{
+     color: white;
+     background-color: #fa4444;
+     background-gradient-direction: horizontal;
+     background-gradient-start: #ff2626;
+     background-gradient-end: #ff5966;
+     font-weight: bold;
+}
+
+
+ button.destructive-action:hover
+ {
+   background: image(#ff5966);
+   background-color: #ff5966; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+ }
+
+
+button.destructive-action:active{
+   background: image(#f91212);
+   background-color: #f91212; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+
+}
+
+switch:checked {
+     color: #f7f7f7;
+     border-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+}
+ switch:checked > slider {
+     border: 1px solid #1d4973;
+}
+
+ entry:focus-within {
+     box-shadow: 0 2px 4px rgba(29, 73, 115, 0.2), inset 0 0 0 2px #1d4973;
+}
+
+ box.horizontal.linked > *{
+     border-radius: 0;
+}
+ box.horizontal.linked > *:first-child{
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+ box.horizontal.linked > *:last-child{
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+ .navigation-sidebar > row:selected {
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+     color: #f7f7f7;
+}
+
+ .navigation-sidebar > row:selected:active {
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: #1d4973;
+
+}
+
+ navigation-view-page, navigation-view{
+     border-right : 1px solid #303030;
+}
+
+ overlay-split-view > widget.sidebar-pane > toolbarview {
+     border-right : 1px solid #303030;
+}
+
+
+
+ levelbar > trough > block.high, levelbar > trough > block:not(.empty) {
+     border-color: #1d4973;
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+
+}
+
+widget > scale > trough > highlight.top{
+     border-color: #1d4973;
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+}
+
+/*Minimize*/
+ button.minimize {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-minimize.svg");
+     background-size: 16px 16px;
+}
+ button.minimize:hover {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-minimize-hover.svg");
+     background-size: 16px 16px;
+}
+ button.minimize:active {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-minimize-hover.svg");
+     background-size: 16px 16px;
+}
+/*Maximize*/
+ button.maximize {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-maximize.svg");
+     background-size: 16px 16px;
+}
+ button.maximize:hover {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-unmaximize-active.svg");
+     background-size: 16px 16px;
+}
+ button.maximize:active {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-unmaximize-active.svg");
+     background-size: 16px 16px;
+}
+/*close*/
+ button.close {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin-right: 2px;
+     margin-left: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-close.svg");
+     background-size: 16px 16px;
+}
+ button.close:hover {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin-right: 2px;
+     margin-left: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-close-active.svg");
+     background-size: 16px 16px;
+}
+ button.close:active {
+     all: unset;
+     border-radius: 50%;
+     min-width: 28px;
+     min-height: 28px;
+     margin-right: 2px;
+     margin-left: -2px;
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-image: url("/home/jibran/.config/gtk-4.0/assets/titlebutton-close-active.svg");
+     background-size: 16px 16px;
+}
+
+window.messagedialog .response-area > button.destructive { 
+
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #ff2626;
+     background: linear-gradient(65deg, #ff2626, #ff5966);
+     border-radius: 0px;    
+}
+
+window.messagedialog .response-area > button.destructive:hover { 
+   background: image(#ff5966);
+   background-color: #ff5966; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2);
+}
+
+window.messagedialog .response-area > button.destructive:active {
+   background: image(#f91212);
+   background-color: #f91212; box-shadow: 0 2px 8px rgba(251, 124, 124, 0.2); 
+}
+
+window.messagedialog .response-area > button.suggested {
+     color: #f7f7f7;
+     outline-color: rgba(255, 255, 255, 0.3);
+     background-color: #1d4973;
+     background: linear-gradient(65deg, #19446e, #2b72b5);
+     border-radius: 0px;    
+     border-top-right-radius: 0px;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+}
+
+window.messagedialog .response-area > button.suggested:hover { 
+    background: #3578b8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+window.messagedialog .response-area > button.suggested:active {
+    background: #1d4973;
+}
+
+
+@define-color accent_color #78aeed;
+@define-color accent_bg_color #3584e4;
+@define-color accent_fg_color #ffffff;
+
+@define-color success_color #8ff0a4;
+@define-color success_bg_color #26a269;
+@define-color success_fg_color #ffffff;
+@define-color warning_color #f8e45c;
+@define-color warning_bg_color #cd9309;
+@define-color warning_fg_color rgba(0, 0, 0, 0.8);
+@define-color error_color #ff7b63;
+@define-color error_bg_color #c01c28;
+@define-color error_fg_color #ffffff;
+@define-color window_bg_color #242424;
+@define-color window_fg_color #ffffff;
+@define-color view_bg_color #242424;
+@define-color view_fg_color #ffffff;
+@define-color headerbar_bg_color #242424;
+@define-color headerbar_fg_color #ffffff;
+@define-color headerbar_border_color #ffffff;
+@define-color headerbar_backdrop_color @window_bg_color;
+@define-color headerbar_shade_color #242424;
+@define-color card_bg_color rgba(255, 255, 255, 0.08);
+@define-color card_fg_color #ffffff;
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+@define-color dialog_bg_color #383838;
+@define-color dialog_fg_color #ffffff;
+@define-color popover_bg_color #383838;
+@define-color popover_fg_color #ffffff;
+@define-color shade_color rgba(0, 0, 0, 0.36);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+@define-color blue_1 #99c1f1;
+@define-color blue_2 #62a0ea;
+@define-color blue_3 #3584e4;
+@define-color blue_4 #1c71d8;
+@define-color blue_5 #1a5fb4;
+@define-color green_1 #8ff0a4;
+@define-color green_2 #57e389;
+@define-color green_3 #33d17a;
+@define-color green_4 #2ec27e;
+@define-color green_5 #26a269;
+@define-color yellow_1 #f9f06b;
+@define-color yellow_2 #f8e45c;
+@define-color yellow_3 #f6d32d;
+@define-color yellow_4 #f5c211;
+@define-color yellow_5 #e5a50a;
+@define-color orange_1 #ffbe6f;
+@define-color orange_2 #ffa348;
+@define-color orange_3 #ff7800;
+@define-color orange_4 #e66100;
+@define-color orange_5 #c64600;
+@define-color red_1 #f66151;
+@define-color red_2 #ed333b;
+@define-color red_3 #e01b24;
+@define-color red_4 #c01c28;
+@define-color red_5 #a51d2d;
+@define-color purple_1 #dc8add;
+@define-color purple_2 #c061cb;
+@define-color purple_3 #9141ac;
+@define-color purple_4 #813d9c;
+@define-color purple_5 #613583;
+@define-color brown_1 #cdab8f;
+@define-color brown_2 #b5835a;
+@define-color brown_3 #986a44;
+@define-color brown_4 #865e3c;
+@define-color brown_5 #63452c;
+@define-color light_1 #ffffff;
+@define-color light_2 #f6f5f4;
+@define-color light_3 #deddda;
+@define-color light_4 #c0bfbc;
+@define-color light_5 #9a9996;
+@define-color dark_1 #77767b;
+@define-color dark_2 #5e5c64;
+@define-color dark_3 #3d3846;
+@define-color dark_4 #241f31;
+@define-color dark_5 #000000;
