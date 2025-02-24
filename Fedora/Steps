@@ -9,7 +9,7 @@ Set Up
 5. To change the login screen user list: 
 	1. Run the script : extractGresource.sh
 	2. It will extract all the resources inside the folder: /home/jibran/shell-theme
-	3. Edit gnome-shell-dark.css: Search for user-list and replace it with: userlist.css
+	3. Edit gnome-shell-dark.css: Search for login-dialog-user-list-view and replace it with: userlist.css
 	4. To change the "Not in list?" in login screes -- remove all css related to .login-dialog-not-listed-button and add the notinlist.css at end of the gnome-shell.css
 	5. To change the password text and back button add the prompt.css at the end of the gnome-shell.css 
 	6. Create gnome-shell-theme.gresource.xml in the same folder
