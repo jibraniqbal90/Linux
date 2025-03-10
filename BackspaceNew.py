@@ -1,8 +1,7 @@
 #!/usr/bin/env python
-
 # created by linuxitos
-# Updated to specifically handle backspace for folder renaming and creation
 
+# Changed from win.up to slot.up to work with gnome47 and fedora41
 import gi
 
 gi.require_version('Nautilus', '4.0')
@@ -10,27 +9,29 @@ gi.require_version('Gtk', '4.0')
 from gi.repository import GObject, Nautilus, Gtk, GLib
 
 
-def on_key_press_event(window, event):
-    """Handle key press events, specifically Backspace."""
-    if isinstance(window, Gtk.Entry):
-        # If we're in a Gtk.Entry (e.g., renaming or folder creation), let Backspace delete
-        if event.keyval == Gtk.keysyms.BackSpace:
-            return False  # Default behavior: delete character
-    return True  # For other cases, do nothing and allow default behavior
+def idle_callback(*args):
+    app = Gtk.Application.get_default()
+    app.set_accels_for_action("slot.up", ["BackSpace"])
+    return False
 
 
-def window_added(window, *args):
-    """Connect key press event to window added event."""
-    window.connect("key-press-event", on_key_press_event)
+def window_added(*args):
+    GLib.idle_add(idle_callback, None)
 
 
 class BackspaceBack(GObject.GObject, Nautilus.ColumnProvider):
     def __init__(self):
-        super().__init__()
         self.app = Gtk.Application.get_default()
-        # Connect to window-added signal, to bind the key press event handler
+        self.app.set_accels_for_action("slot.up", ["BackSpace"])
         self.app.connect("window-added", window_added)
 
 
-# Instantiate the BackspaceBack handler
-BackspaceBack()
+# Register the extension
+def create_backspace_back():
+    return BackspaceBack()
+
+
+# Connect the extension to Nautilus
+if __name__ == "__main__":
+    extension = create_backspace_back()
+    Gtk.main()
