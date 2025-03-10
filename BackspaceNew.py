@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # created by linuxitos
-# Changed from win.up to slot.up to work with gnome47 and fedora41
+# Updated to properly handle backspace during folder creation and renaming
 
 import gi
 
@@ -10,29 +10,27 @@ gi.require_version('Gtk', '4.0')
 from gi.repository import GObject, Nautilus, Gtk, GLib
 
 
-def idle_callback(*args):
-    # Get the default application
-    app = Gtk.Application.get_default()
-    
-    # Set the accelerator for Backspace only if we are not renaming a file/folder
-    if not isinstance(app.get_active_window(), Gtk.Entry):
-        app.set_accels_for_action("slot.up", ["BackSpace"])
+def key_press_event(window, event):
+    """Handle key press events specifically to catch Backspace."""
+    if isinstance(window, Gtk.Entry):
+        # If we're in a Gtk.Entry (e.g., renaming or folder creation), do nothing, let Backspace delete
+        return False
+    if event.keyval == Gtk.keysyms.BackSpace:
+        # If Backspace is pressed and we're not in an Entry, trigger "Go Back" action
+        window.emit("go-back")
+        return True
     return False
 
 
-def window_added(*args):
-    # This ensures that the callback is called when a new window is added
-    GLib.idle_add(idle_callback, None)
+def window_added(window, *args):
+    """Connect to window added event to bind the key event."""
+    window.connect("key-press-event", key_press_event)
 
 
 class BackspaceBack(GObject.GObject, Nautilus.ColumnProvider):
     def __init__(self):
         super().__init__()
-        # Get the default application
         self.app = Gtk.Application.get_default()
-        # Initially, bind Backspace for "Go Back" action
-        self.app.set_accels_for_action("slot.up", ["BackSpace"])
-        # Connect to window-added signal
         self.app.connect("window-added", window_added)
 
 
